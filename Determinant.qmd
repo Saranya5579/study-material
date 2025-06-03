@@ -1,0 +1,174 @@
+---
+title: "DETERMINANT"
+format:
+    revealjs:
+        theme: [night]
+        slide-number: true
+        controls: true
+        show-slide-number: speaker
+        chalkboard: false
+        code-line-numbers: false
+        preview-links: auto
+        preloadIframes: true
+        
+author: "Dr. Pratheesh P Gopinath"
+date: 15/03/2025
+date-format: "ddd Do MMMM YYYY"
+footer: "Department of Agricultural Statistics"
+from: markdown+emoji
+---
+
+## 
+
+::: panel-tabset
+### Determinant
+
+1.  Corresponding each square matrix: $A = \scriptsize\begin{bmatrix} a_{1,1}&a_{1,2}& ...&...& a_{1,n}\\ a_{2,1} & a_{2,2}&...&...&... \\...&...&...&...&...\\...&...&...&...&...\\a_{m,1} & a_{m,2} & ... &...& a_{m,n}\end{bmatrix}$. there is associated an expression,called the determinant of $A$ or $|A|,$ written as: $|A|=\scriptsize\begin{vmatrix} a_{1,1}&a_{1,2}& ...&...& a_{1,n}\\ a_{2,1} & a_{2,2}&...&...&... \\...&...&...&...&...\\...&...&...&...&...\\a_{m,1} & a_{m,2} & ... &...& a_{m,n}\end{vmatrix}$
+
+### Examples
+
+Value Determinant of order 2:
+
+$|A|=\scriptsize\begin{vmatrix}a_{11}& a_{12}\\a_{21}&a_{22}\end{vmatrix}=(a_{11}a_{22}-a_{21}a_{12})$
+
+1.  Example :
+
+$\scriptsize\begin{vmatrix}2&3\\5&9\end{vmatrix}=(2\times9)-(3\times5)=18-15=3$
+
+2.  Example:
+
+$\Delta =\scriptsize \begin{vmatrix}2&3&1\\4&5&-8\\0&7&6\end{vmatrix}$ $=\scriptsize 2 \begin{vmatrix}5&-8\\ 7&6\end{vmatrix}-3\begin{vmatrix}4&-8\\0&6\end{vmatrix}+1\begin{vmatrix}4&5\\0&7\end{vmatrix}$ $\scriptsize =2(30-^-56)-3(24-0)+1(28-0)=172-72+28=128$
+:::
+
+## 
+
+::: panel-tabset
+### Minor & Co-factor
+
+2.  Minor of An element $\scriptsize a_{ij}$ in $\scriptsize |A|:$ The minor of an element $\scriptsize a_{ij}$ in $|A|$ is the value of the determinant obtained by deleting the $\scriptsize i^{th}$ row and $\scriptsize j^{th}$ column of $\scriptsize |A|$, denoted by $\scriptsize M_{ij}.$
+
+3.  Cofacror of $\scriptsize a_{ij}$ in $|A|$: the co-factor $\scriptsize C_{ij}$ of $\scriptsize a_{ij}$ is defined as: $\scriptsize C_{ij}=(-1)^{i+j}.M_{ij}$
+
+4.  Value of a Determinant :
+
+\$\scriptsize \Delta = \$Sum of the products of elements of any row or coulmn with their corresponding co-factor.
+
+### Example
+
+Let $\scriptsize \Delta = \begin{bmatrix} 2&3&5\\-1&0&4\\1&-2&-3 \end{bmatrix}$. Then
+
+The minor of various elements
+
+$\scriptsize M_{11}=\begin{vmatrix}0&4\\-2&-3\end{vmatrix}=8, M_{12}=\begin{vmatrix}-1&4\\1&-3\end{vmatrix}=-1, M_{13}=\begin{vmatrix}-1&0\\1&-2\end{vmatrix}=2, M_{21}=\begin{vmatrix}3&5\\-2&-3\end{vmatrix}=1, M_{22}=\begin{vmatrix}2&5\\1&-3\end{vmatrix}=-11,$
+
+$\scriptsize M_{23}=\begin{vmatrix}2&3\\1&-2\end{vmatrix}=-7, M_{31}=\begin{vmatrix}3&5\\0&4\end{vmatrix}=12, M_{32}=\begin{vmatrix}2&5\\-1&4\end{vmatrix}=13, M_{33}=\begin{vmatrix}2&3\\-1&0\end{vmatrix}=3$
+
+The co-factors of various elements of $\scriptsize \Delta$ are:
+
+$C_{11}=(-1)^{1+1}.8 = 8,C_{12}=(-1)^{1+2}.(-1)=1$,
+
+$C_{13}=(-1)^{1+3}.2=2,C_{21}=(-1)^{2+1}.1=-1$
+:::
+
+
+
+
+## Properties of determinants
+
+-   If the rows and columns of a determinant are interchanged, the value of the determinant remains unchanged.Thus, for any square matrix $A$, we have $\scriptsize |A^{t}|=|A|$
+
+-   If any two adjacent rows or columns of a determinant are interchanged, the numerical value of the determinant remains the same but its sign is cahnged
+
+-   If all the elemnts of one row (or one column) of a determinant are multiplied by $k$, the value of the new determinant is $k$ times the value of the original determinant.
+
+-   If two rows(or two columns) of a determinant are identical or their elements are proportional, the value of the determinant is zero.
+
+##
+
+-   If to the elements of a row(or column) of a determinant are added $k$ times the corresponding elements of another row(or column), the value of the determinant remains unchanged.
+
+-   The sum of the products of the elements of any row(or column) with their corresponding co- factors is equal to the value of the determinant.
+
+-   In a determinant, the sum of the products of the elements of any row(column) with the co-factor of the corresponding elements of any other row(cpolumn) is zero.
+
+-   If in a determinant, each element in any row (column) consisits of the sum of two terms, then the determinant can be expressed as the sum of two determinants of the same order.
+
+
+
+
+
+
+## 
+
+::: panel-tabset
+### *Singular and Non-Singular*
+
+[*Singular,*]{.underline} if$|A|$ = $0$ and non- singular if $|A|$ $\neq$ $0$
+
+-   If A and B are two non-zero square matrices of the same order such that $AB$ = $0$ then both are singular, i.e, $|A|$ = $0$ & $|B|$ = $0$
+
+-   $AB$ = $AC$ $\implies$ $B$ = $C$ is true only when $A$ is non-singular, $|A|$ $\neq$ $0$
+
+### Example
+
+***Example 1:***
+
+$A=\scriptsize\begin{bmatrix}2&3\\4&-7\end{bmatrix}\implies$$|A|=\scriptsize\begin{vmatrix}2&3\\4&-7\end{vmatrix}=-14-12=-26\neq0$ ,
+
+$A$ is non-singular
+
+***Example 2:***
+$A=\scriptsize\begin{bmatrix}1&-1&3\\1&3&-3\\5&3&3\end{bmatrix}\implies$$|A|=1(9-^-9)-((-1)(3-^-15)+3(3-15)=18+18-36=0$
+
+$A$ is singular
+
+:::
+
+##
+
+::: panel-tabset
+### 5. determinant of co-factors:
+
+If $\Delta'$ is the determinant formed by replacing the elements of a determinant $\Delta$ of order $n$ by their corresponding Co-factors, then $\Delta^ =\Delta^{n-1}$
+
+Thus, if $\scriptsize A_i,B_i,C_i$ denote the co-factors of $\scriptsize a_i,b_i,c_i$ respectively in $|A|$, then $\scriptsize\begin{vmatrix} A_{1}& b_{1}&C_1\\A_{2}&B_{2}&C_{2}\\A_3&B_3&C_3\end{vmatrix}=\scriptsize\begin{vmatrix}a_{1}& b_{1}&c_1\\a_{2}&b_{2}&c_{2}\\a_3&b_3&c_3\end{vmatrix}$
+
+### Example
+
+
+:::
+
+
+## 
+
+[**Various Conditions for the solution of a system of equations**:]{.colored-bold style="color:yellow;"}
+
+1.  Let the given system be:
+
+$a_1x+b_1y=c_1,a_2x+b_2y=c_2.$
+
+Let $\scriptsize \Delta = \begin{vmatrix}a_1&b_1\\a_2&b_2\end{vmatrix}, \Delta_x=\begin{vmatrix}c_1&b_1\\c_2&b_2\end{vmatrix}and$ $\Delta_y=\begin{vmatrix}a_1&c_1\\a_2&c_2\end{vmatrix}$
+
+Then , $x= \frac{\Delta x}{\Delta}$ and $y= \frac{\Delta y}{\Delta}$
+
+The above system has :
+
+i. a unique solution, if $\Delta\neq0$
+ii. an infinite number of solutions, if $\Delta = 0$,$\Delta_x = 0$ and $\Delta_y=0$
+iii. no solution, if $\Delta =0$ and $\Delta_x\neq0$ or $\Delta_y\neq0$
+
+##
+
+::: panel-tabset
+### 
+
+
+
+### Example
+
+
+:::
+
+
+
+

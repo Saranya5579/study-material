@@ -1,0 +1,330 @@
+---
+title: "SET THEORY"
+format:
+    revealjs:
+        theme: [night]
+        slide-number: true
+        controls: true
+        show-slide-number: speaker
+        chalkboard: false
+        code-line-numbers: false
+        preview-links: auto
+        preloadIframes: true
+        
+author: "Dr. Pratheesh P Gopinath"
+date: 15/03/2025
+date-format: "ddd Do MMMM YYYY"
+footer: "Department of Agricultural Statistics"
+from: markdown+emoji
+---
+
+## 
+
+::: panel-tabset
+### 1. [**Set**:]{.colored-bold style="color:yellow;"}
+
+Set is well defined collection of objects.
+
+-   [**Key Points**:]{.colored-bold style="color:green;"}
+
+    -   Each element in a set is unique; duplicates are not allowed.
+    -   The order of elements in a set is irrelevant. For example, {1, 2, 3} is the same as {3, 2, 1}.
+    -   A set must be clearly defined
+
+### Example
+
+-   The set of vowels: {a, e, i, o, u}.
+-   The set of even numbers: {2, 4, 6, ...}.
+-   The set of prime numbers less than 10: {2, 3, 5, 7}.
+:::
+
+## 
+
+::: panel-tabset
+### 2. [**Types of Set**:]{.colored-bold style="color:yellow;"}
+
+-   [**Empty Set**:]{.colored-bold style="color:green;"} A set with no elements, denoted ∅ or {}.
+-   [**Singleton Set**:]{.colored-bold style="color:green;"} A set with exactly one element. Example: {5}.
+-   [**Finite Set**:]{.colored-bold style="color:green;"} Contains a specific number of elements. Example: {a, b, c}.
+-   [**Infinite Set**:]{.colored-bold style="color:green;"} Contains an infinite number of elements. Example: The set of all natural numbers {1, 2, 3, ...}.
+-   [**Equal Sets**:]{.colored-bold style="color:green;"}  A  and  B  are equal sets, if they contain exactly the same elements, denoted  A = B 
+    
+    Example : Set < A = \{1, 2, 3\} & B = \{3, 1, 2\} $\scriptsize \implies$ A = B
+
+:::
+
+
+##
+
+
+::: panel-tabset
+### [**Types of Set**:]{.colored-bold style="color:yellow;"}
+
+-   [**Subset** :]{.colored-bold style="color:green;"} A set A is a subset of B (denoted A ⊆ B) if every element of B is also in A.
+    
+     A = {1,2}  &  B = {1,2,3,4},  A ⊆ B
+     
+     A is a subset of B & B is a [**superset**]{.colored-bold style="color:pink;"}.
+    
+     -  A set with n elements, the number of subsets = $\scriptsize 2^n$.
+     
+ -  [**Proper Subset**:]{.colored-bold style="color:green;"} if  $\scriptsize A \subset B$  forall $x \in$ A, $x \in$ B  and there exists at least one  $x \in$ B  $x \notin$ A   
+     
+-   [**Power Set**:]{.colored-bold style="color:green;"} The set of all subsets of a given set. For a set with n elements, the power set has $\scriptsize 2^n$ elements.
+  
+     
+-   [**Universal Set**:]{.colored-bold style="color:green;"} A set containing all elements under consideration, often denoted U.
+
+### Example
+
+1.  Example: U = {1,2,3,4,5......10}
+
+    A = {2,4,5}
+
+    B = {1,2,3,4,5,7,8}
+
+    A ⊆ B
+
+    Power set A = {{2}, {4}, {5}, {2,4}, {2,5}, {4,5}, {2,4,5}, {}}
+
+    Number elements of Power set A = $2^3=8$
+:::
+
+## 
+
+::: panel-tabset
+### 3. [**Operations on Sets**:]{.colored-bold style="color:yellow;"}
+
+-   [**Union** :]{.colored-bold style="color:green;"} (A ∪ B) = {x : x ∈ A or x ∈ B}
+
+-   [**Intersection** :]{.colored-bold style="color:green;"} (A ∪ B) = {x : x ∈ A and x ∈ B}
+
+-   [**Difference** :]{.colored-bold style="color:green;"} (A - B) = {x : x ∈ A and x ∉ B}
+
+-   [**Complement**:]{.colored-bold style="color:green;"} A'= {x : x ∈ U and x ∉ A}
+
+-   [**Cartesian Product (A × B)**:]{.colored-bold style="color:green;"} The set of all ordered pairs (a, b) where a ∈ A and b ∈ B.
+
+### Example
+
+1.  Example: U = {1, 2, 3, 4, 5......10}
+
+    A = {2, 4, 5} , B = {1, 2, 3, 5, 7, 8}
+
+    $\implies$ (A ∪ B) = {1,2,3,4,5,7,8}
+
+    $\implies$ (A ∩ B) = {2,5}
+
+    $\implies$ (A - B) = {4} , (B - A) = {1,3,7,8}
+
+    $\implies$ A' = U - A = {1,3,6,7,8,9,10} , B' = {4,6,9,10}
+
+2.  Example: A = {1, 2} , B = {4,5,7}
+
+    $\implies$ (A × B) = {(1,4), (1,5), (1,7), (2,4), (2,5), (2,7)}
+
+    $\implies$ (B × A) = {(4,1), (4,2), (5,1), (5,2), (7,1), (7,2)}
+:::
+
+## 
+
+::: panel-tabset
+### 4. [**Properties of Sets**:]{.colored-bold style="color:yellow;"}
+
+1.  [**Commutative Property**:]{.colored-bold style="color:green;"}
+
+    -   A ∪ B = B ∪ A
+    -   A ∩ B = B ∩ A
+
+2.  [**Associative Property**:]{.colored-bold style="color:green;"}
+
+    -   (A ∪ B) ∪ C = A ∪ (B ∪ C)
+    -   (A ∩ B) ∩ C = A ∩ (B ∩ C)
+
+3.  [**Distributive Property**:]{.colored-bold style="color:green;"}
+
+    -   A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)
+    -   A ∩ (B ∪ C) = (A ∩ B) ∪ (A ∩ C)
+
+### Examples
+
+1.  Example : If A = {1, 2} and B = {2, 3},
+
+    then A ∪ B = {1, 2, 3} = B ∪ A
+
+    A ∩ B = {2} = B ∩ A.
+
+2.  Example : A = {1, 2}, B = {2, 3}, C = {3, 4},
+
+    (A ∪ B) ∪ C = {1, 2, 3} ∪ {3, 4} = {1, 2, 3, 4}
+
+    A ∪ (B ∪ C) = {1, 2} ∪ {2, 4} = {1, 2, 3, 4}
+
+    $\therefore$ (A ∪ B) ∪ C = A ∪ (B ∪ C)
+
+3.  Example : If A = {1, 2}, B = {2, 3}, C = {2, 4},
+
+    then A ∪ (B ∩ C) = A ∪ {2} = {1, 2},
+
+    (A ∪ B) ∩ (A ∪ C) = {1, 2, 3} ∩ {1, 2, 4} = {1, 2}.
+:::
+
+## 
+
+::: panel-tabset
+### [**Properties of Sets**:]{.colored-bold style="color:yellow;"}
+
+4.  [**Identity Property**:]{.colored-bold style="color:green;"}
+
+    -   A ∪ ∅ = A
+    -   A ∩ U = A
+
+5.  [**Complement Property**:]{.colored-bold style="color:green;"}
+
+    -   A ∪ A' = U and A ∩ A' = ∅
+    -   (A')' = A
+
+6.  [**Idempotent Property**:]{.colored-bold style="color:green;"}
+
+    -   A ∪ A = A
+    -   A ∩ A = A
+
+### Examples
+
+1.  Example : If A = {1, 2}, and U = {1, 2, 3, 4},
+
+    then A ∪ ∅ = {1, 2} , A ∩ U = {1, 2}
+
+2.  Example : If U = {1, 2, 3, 4} and A = {1, 2},
+
+    then A' = {3, 4}, and A ∪ A' = {1, 2, 3, 4} = U
+
+3.  Example : If A = {1, 2}
+
+    then A ∪ A = {1, 2} and A ∩ A = {1, 2}
+:::
+
+## 
+
+::: panel-tabset
+### [**Properties of Sets**:]{.colored-bold style="color:yellow;"}
+
+7.  [**Null Set Property**:]{.colored-bold style="color:green;"}
+
+    -   A ∩ ∅ = ∅
+
+8.  [**Subset and Superset Properties**:]{.colored-bold style="color:green;"}
+
+    -   A set A is a subset of B (A ⊆ B) if every element of A is in B.
+    -   B is a superset of A (B ⊇ A) if A is a subset of B
+    -   The empty set is a subset of every set: ∅ ⊆ A.
+    -   Every set is a subset of itself: A ⊆ A.
+
+9.  [**Cardinality Property**:]{.colored-bold style="color:green;"}
+
+    -   \|A ∪ B\| = \|A\| + \|B\| - \|A ∩ B\|
+
+### Examples
+
+1.  Example :
+
+    If A = {1, 2}, then A ∩ ∅ = ∅
+
+2.  Example :
+
+    If A = {1, 2} and B = {1, 2, 3}, then A ⊆ B
+
+3.  Example :
+
+    If A = {1, 2} and B = {2, 3},
+
+    then \|A\| = 2, \|B\| = 2, \|A ∩ B\| = 1,
+
+    $\implies$ \|A ∪ B\| = 2 + 2 - 1 = 3
+:::
+
+## 
+
+::: panel-tabset
+### [**De Morgan’s Laws**:]{.colored-bold style="color:yellow;"}
+
+1.  First Law: The complement of the union of two sets is the intersection of their complements,
+
+    [**(A ∪ B)' = A' ∩ B'**]{.colored-bold style="color:red;"}
+
+2.  Second Law: The complement of the intersection of two sets is the union of their complements,
+
+    [**(A ∩ B)' = A' ∪ B'**]{.colored-bold style="color:red;"}
+
+### Examples
+
+1.  Example :
+
+    If U = {1, 2, 3, 4}, A = {1, 2}, B = {2, 3},
+
+    then (A ∪ B)' = {1, 2, 3}' = {4},
+
+    A' ∩ B' = {3, 4} ∩ {1, 4} = {4}
+
+    $\therefore$ (A ∪ B)' = A' ∩ B'
+:::
+
+## 
+
+5.  [**Laws of OPerations**:]{.colored-bold style="color:yellow;"}
+
+    -   A ∩ (B - C) = (A ∩ B) - (A ∩ C)
+    -   A ∪ B = A ∩ B $\Leftrightarrow$ A = B
+    -   (A - B) ∪ (B - A) = (A ∪ B) - (A ∩ B)
+    -   (A - B) ∩ B = ∅
+    -   A - (B ∪ C) = (A - B) ∩ (A - C)
+    -   A - (B ∩ C) = (A - B) ∪ (A - C)
+    -   A - B = A ∩ B'
+    -   A ⊆ B $\Leftrightarrow$ B' ⊆ A
+
+## 
+
+6.  [**Importanat Result**:]{.colored-bold style="color:yellow;"}
+
+    -   n (A ∪ B) = n (A) + n (B) - n (A ∩ B)
+    -   If A ∩ B = ∅ , then n (A ∪ B) = n (A) + n (B)
+    -   n (A - B) + n (A ∩ B) = n (A)
+    -   n (B - A) + n (A ∩ B) = n (A)
+    -   n (A - B) + n (A ∩ B) + n (B - A) = n (A ∪ B)
+    -   n (A ∪ B ∪ C) = n (A) + n (B) + n (C) + n (A ∩ B ∩ C) - { n (A ∩ B) + n(B ∩ C) + n(A ∩ C)}
+
+## 
+
+::: panel-tabset
+### [**Sets in Interval Form**:]{.colored-bold style="color:yellow;"}
+
+1.  [**Sets in Interval Notation**:]{.colored-bold style="color:green;"}
+
+    -   \[a, b\] = {x ∈ ℝ \| a ≤ x ≤ b}
+    -   (a, b) = {x ∈ ℝ \| a \< x \< b}
+    -   \[a, b) = {x ∈ ℝ \| a ≤ x \< b}
+    -   (a, b\] = {x ∈ ℝ \| a \< x ≤ b}
+    -   (a, ∞) = {x ∈ ℝ \| x \> a}
+    -   \[a, ∞) = {x ∈ ℝ \| x ≥ a}
+    -   (-∞, b) = {x ∈ ℝ \| x \< b}
+    -   (-∞, b\] = {x ∈ ℝ \| x ≤ b}
+    -   (-∞, ∞): Represents the entire set of real numbers, ℝ
+
+### Examples
+
+1.  Example :
+
+    \[2, 5\] = {x ∈ ℝ \| 2 ≤ x ≤ 5}
+
+2.  Example :
+
+    (2, 5) = {x ∈ ℝ \| 2 \< x \< 5}
+
+3.  Example :
+
+    \[2, 5) = {x ∈ ℝ \| 2 ≤ x \< 5}
+
+4.  Example :
+
+    (2, 5\] = {x ∈ ℝ \| 2 \< x ≤ 5}
+:::

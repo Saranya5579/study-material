@@ -1,0 +1,163 @@
+---
+title: "DIFFERENTIAL CALCULUS"
+format:
+    revealjs:
+        theme: [night]
+        slide-number: true
+        controls: true
+        show-slide-number: speaker
+        chalkboard: false
+        code-line-numbers: false
+        preview-links: auto
+        preloadIframes: true
+        
+author: "Dr. Pratheesh P Gopinath"
+date: 15/03/2025
+date-format: "ddd Do MMMM YYYY"
+footer: "Department of Agricultural Statistics"
+from: markdown+emoji
+---
+
+## 
+
+1.  [**Limit**:]{.colored-bold style="color:yellow;"}
+
+    We say that $\lim_{\ x \to \ a}f(x)=l$, if for each $\epsilon >0$ $\exists a$ $\scriptsize \delta>0$ such that $\scriptsize |f(x)-l|< \delta$.
+
+2.  [**Intermidiate forms**:]{.colored-bold style="color:yellow;"}
+
+    Let $f(x)= \frac{g(x)}{h(x)}$. If at $x=a, f(x)$ takes any of the forms:
+
+    $\scriptsize \frac{0}{0}, \frac{\infty}{\infty},(\infty-\infty),(0\times\infty),0^0,1^{\infty}$ and $\scriptsize \infty^{0}$, then we say that $\scriptsize f(x)$ is intermidiate at $x=a$
+
+## 
+
+3.  [**L'Hospital's Rule**:]{.colored-bold style="color:yellow;"}
+
+    Let $f(x)= \frac{g(x)}{h(x)}$ and $f(a)$ is of the form $\scriptsize \frac{0}{0}$or $\frac{\infty}{\infty}$.
+
+Then,$\lim_{\ x \to \ a}\frac{g(x)}{h(x)}=\lim_{\ x \to \ a} \frac{g'(x)}{h'(x)}$
+
+4.  [**Method for Evaluating** $\lim_{ x \to \infty} f(x)$ :]{.colored-bold style="color:yellow;"}
+
+    Replace $x$ by $\frac{1}{y}$ and take the limt as $y \to \infty$
+
+## 
+
+5.  [**Expantions**:]{.colored-bold style="color:yellow;"}
+
+    -   $sinx=x-\frac{x^3}{3!}+\frac{x^5}{5!}-....... \infty$
+    -   $cosx=1-\frac{x^2}{2!}+\frac{x^4}{4!}-....... \infty$
+    -   $tanx=x+\frac{1}{3}x^3+\frac{2}{15}x^5+.......\infty$
+    -   $e^x=1+x+\frac{x^2}{2!}+\frac{x^3}{3!}+.......\infty$
+    -   $log(1+x)=x-\frac{1}{2}x^2+\frac{1}{3}x^3+.....\infty$
+    -   $sinhx=x+\frac{x^3}{3!}+\frac{x^5}{5!}+.......\infty$
+    -   $coshx=1+\frac{x^2}{2!}+\frac{x^4}{4!}+.......\infty$
+
+## 
+
+5.  [**Some Importat Limits**:]{.colored-bold style="color:yellow;"}
+
+    -   $\lim_{\ x \to \ 0}\frac{sinx}{x}=1$
+    -   $\lim_{\ x \to \ 0}(1+x)^{\frac{1}{2}}=e$
+    -   $\lim_{\ x \to \ a}\frac{x^n-a^n}{x-a}=na^{n-1}$
+    -   $\lim_{\ x \to \infty}a^n=$$\scriptsize \begin{cases} \infty,if & a > 1 \\ 0,if & a < 1 \end{cases}$
+    -   $\lim_{\ x \to \infty}(1+\frac{1}{n})^n=e$
+    -   $\lim_{\ x \to \infty}(1+\frac{a}{n}^n)=e^a$
+
+## 
+
+5.  [**Right Hand & Left Hand Limits**:]{.colored-bold style="color:yellow;"}
+
+    Suppose we have to find $\lim_{ x \to a} f(x).$
+
+    -   Right Hand Limit is denoted by $\lim_{ x \to a^+}$ or $\scriptsize f(a+0)$
+
+        [working principle:]{.underline} Replace $x$ by $\scriptsize (a+h)$ and take the $lim$ as $\scriptsize h \to 0$
+    -   Right Hand Limit is denoted by $\lim_{ x \to a^-}$ or $\scriptsize f(a-0)$
+
+        [working principle:]{.underline} Replace $x$ by $\scriptsize (a-h)$ and take the $lim$ as $\scriptsize h \to 0$
+      
+    -   If $\scriptsize f(a+0)\ne f(a-0)$, we say that $\lim_{ x \to a}$ $\scriptsize f(x)$ does not exist.
+    -   If $\scriptsize f(a+0)=f(a-0)$, their common value is 
+        
+        $\lim_{ x \to a}$ $\scriptsize f(x)$.
+        
+        
+##
+
+5.  [**Continuity**:]{.colored-bold style="color:yellow;"}
+  
+    -  A function $\scriptsize f(x)$ is said to be countinuos at a point $x=a$, if $\lim_{ x \to a}$ $\scriptsize f(x)=f(a)$.
+    
+    This happens when $\scriptsize f(a+0)=f(a-0)=f(a).$
+    
+    -  If $\scriptsize f(x)$ is not countinuos at $x=a$, it is said to be discountinuous at $x=a$
+    
+##
+
+5.  [**Differentiability**:]{.colored-bold style="color:yellow;"}
+
+    -   [**Right Hand Derivative of $\scriptsize f(x)$ at $x=a$:**]{.colored-bold style="color:green;"}
+             
+        $\scriptsize R f'(a)$$=\lim_{h \to 0} \frac{f(a+h)-f(a)}{h}$
+             
+    -   [**Left Hand Derivative of $\scriptsize f(x)$ at $x=a$:**]{.colored-bold style="color:green;"}
+             
+        $\scriptsize L f'(a)$$=\lim_{h \to 0} \frac{f(a-h)-f(a)}{h}$
+        
+    -   If $\scriptsize R f'(a)\ne L f'(a)$, we say that $\scriptsize f(x)$ is not differentiable at $x=a$
+    
+    -   If $\scriptsize R f'(a)= L f'(a)$, then their common value is $\scriptsize f'(a).$
+    
+    
+##
+
+5.  [**TOTAL DIFFERENTIATION**:]{.colored-bold style="color:yellow;"}
+
+    -   $\scriptsize \frac{d}{dx}(x^n)=nx^{n-1}$
+    -   $\scriptsize \frac{d}{dx}(a^x)=a^x(loga)$
+    -   $\scriptsize \frac{d}{dx}(e^x)=e^x$
+    -   $\scriptsize \frac{d}{dx}(log x)=\frac{1}{x}$
+    -   $\scriptsize \frac{d}{dx}(sin x)=cos x$
+    -   $\scriptsize \frac{d}{dx}(cos x)=-sin x$
+    -   $\scriptsize \frac{d}{dx}(tan x)=sec^2x$
+    -   $\scriptsize \frac{d}{dx}(sec x)=secx$ $\scriptsize tan x$
+    -   $\scriptsize \frac{d}{dx}(cotx)=-cosec^2x$
+    -   $\scriptsize \frac{d}{dx}(cosec x)=- cosec x$ $\scriptsize cotx$
+
+##  
+-   [**Inverse Trigonometric functions**:]{.colored-bold style="color:green;"}
+
+    -   $\scriptsize \frac{d}{dx}(sin^{-1}x)= \frac{1}{\sqrt{1-x^2}}$
+    
+    -   $\scriptsize \frac{d}{dx}(cos^{-1}x)= \frac{-1}{\sqrt{1-x^2}}$
+    
+    -   $\scriptsize \frac{d}{dx}(tan^{-1}x)= \frac{1}{{(1+x^2)}}$
+    
+    -   $\scriptsize \frac{d}{dx}(cot^{-1}x)= \frac{-1}{{(1+x^2)}}$
+    
+    -   $\scriptsize \frac{d}{dx}(sec^{-1}x)= \frac{1}{x\sqrt{x^2-1}}$
+    
+    -   $\scriptsize \frac{d}{dx}(cosec ^{-1}x)= \frac{-1}{x\sqrt{x^2-1}}$    
+    
+## 
+
+5.  [**PARTIAL DIFFERIVATIVES**:]{.colored-bold style="color:yellow;"}
+
+    A partial derivative measures how a function changes with respect to one variable, holding others constant. 
+    -    For a function $\scriptsize f(x, y)$, the partial derivatives are
+     
+         $\scriptsize \frac{\partial f}{\partial x}$ & $\scriptsize \frac{\partial f}{\partial y}$.
+         
+    -    Example : For the function $\scriptsize f(x, y) = x^2 + y^2$, the partial derivatives are:
+        
+         $\frac{\partial f}{\partial x}= 2x$  and $\frac{\partial f}{\partial y}= 2y$
+
+
+    
+    
+    
+    
+    
+    

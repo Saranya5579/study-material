@@ -1,0 +1,297 @@
+---
+title: "VECOTR "
+format:
+    revealjs:
+        theme: [night]
+        slide-number: true
+        controls: true
+        show-slide-number: speaker
+        chalkboard: false
+        code-line-numbers: false
+        preview-links: auto
+        preloadIframes: true
+        
+author: "Dr. Pratheesh P Gopinath"
+date: 15/03/2025
+date-format: "ddd Do MMMM YYYY"
+footer: "Department of Agricultural Statistics"
+from: markdown+emoji
+---
+
+## 
+
+::: panel-tabset
+### [**Vector**:]{.colored-bold style="color:yellow;"}
+
+A quatity that has magnitude as well as direction is called a vector. Example: A displacement of 5 meters at 30° north of east is a vector, with magnitude (5 meters) and direction (30°).
+
+-   Vectors are denoted with a letter and an arrow, e.g.,$\vec{a}$,or $\overrightarrow{AB}$ for a vector from point A to B.
+
+-   In a 2D or 3D coordinate system, a vector is represented by its components:
+
+    -   2D: $\vec{a}$ = (x, y)
+    -   3D: $\vec{a}$ = (x, y, z)
+
+-   using unit vectors: $\vec{a} = x\hat{i} + y\hat{j} + z\hat{k}$ where $\hat{i}$, $\hat{j}, \hat{k}$ are unit vectors along the x, y,and z-axes.
+:::
+
+## 
+
+::: panel-tabset
+### 1. [**Position Vector**:]{.colored-bold style="color:yellow;"}
+
+Represents the position of  $P$ relative to the origin
+$\scriptsize O(0, 0, 0)$. It is denoted as $\scriptsize \vec{OP}$.
+
+  $\quad$ In 2D: The position vector of point P(x, y) is: 
+  
+   $\quad$$\quad$$\scriptsize \vec{OP} = x \hat{i} + y \hat{j}$
+  
+  $\quad$ In 3D: The position vector of point P(x, y, z) is: 
+  
+   $\quad$$\quad$$\scriptsize \vec{OP} = x \hat{i} + y \hat{j} + z \hat{k}$
+  
+-   [**Vector Between Two Points**:]{.colored-bold style="color:green;"}
+
+    The vector from point   $\scriptsize P(x_1, y_1, z_1)$  to   $\scriptsize Q(x_2, y_2, z_2)$  is 
+        
+  $\quad$$\quad$$\scriptsize \vec{OQ} - \vec{OP} = \vec{PQ}$
+  
+  $\quad$$\quad$$\scriptsize \vec{OQ} + \vec{QP} = \vec{OP}$
+  
+### Example 
+
+1. Example: 
+
+   The point $P(3, 4, 12)$ has position vector:
+
+   $\vec{OP} = 3 \hat{i} + 4 \hat{j} + 12 \hat{k}$
+
+2. Example: 
+
+   For P(3, 4, 12) and Q(1, -2, 2) 
+   
+    $\vec{OP} = 3 \hat{i} + 4 \hat{j} + 12 \hat{k}$, $\quad \vec{OQ} = 1 \hat{i} - 2 \hat{j} + 2 \hat{k}$
+  
+    $\vec{PQ} = \vec{OQ} - \vec{OP} = (1 - 3) \hat{i} + (-2 - 4) \hat{j} + (2 - 12) \hat{k} = -2 \hat{i} - 6 \hat{j} - 10 \hat{k}$
+:::
+
+## 
+
+::: panel-tabset
+### [**Position Vector**:]{.colored-bold style="color:yellow;"}
+
+-  If A and B are two points with position vectors $\vec{a}$ and $\vec{b}$ respectively and C is a point, that divides AB in the ratio  m:n , the position vector of  C is:
+
+    $\quad$ $\vec{c} = \frac{n \; \vec{a} + m \; \vec{b}}{m + n}$
+    
+-  Position vector of the midpoint AB is:
+
+    $\quad$ $\frac{1}{2}(\vec{a} + \vec{b})$
+    
+-  Position vector of the ceentroid of $\scriptsize \Delta ABC$ having vertices $\vec{a},\vec{b},\vec{c}$ is:
+
+    $\quad$ $\frac{1}{3}(\vec{a} + \vec{b} + \vec{c})$
+    
+  
+    
+    
+
+
+
+### Example
+
+1.  Example:
+
+    A(3, 4, 12)  and B(1, -2, 2)  internally in the ratio  2:3 
+    
+     A(3, 4, 12) : $\vec{a} = 3 \hat{i} + 4 \hat{j} + 12 \hat{k}$  and 
+     
+     B(1, -2, 2) : $\vec{b} = 1 \hat{i} - 2 \hat{j} + 2 \hat{k}$
+     
+     $\vec{c} = \frac{n \; \vec{a} + m \; \vec{b}}{m \; + \; n} = \frac{3 \; \vec{a} + 2 \; \vec{b}}{2 + 3} = \frac{3 \; (3 \hat{i} \;  + \; 4 \hat{j} \; + \; 12 \hat{k}) \; + \; 2 (1 \hat{i} \; - \; 2 \hat{j} \; + \; 2 \hat{k})}{5}$
+     
+     $\vec{c} = \frac{11 \hat{i} \; + \; 8 \hat{j} \; + \; 40 \hat{k}}{5} = \frac{11}{5} \hat{i} \; + \; \frac{8}{5} \hat{j} \; + \; 8 \hat{k}$
+ 
+2. Example :
+
+   $\vec{a} = 3 \hat{i} + 4 \hat{j} + 12 \hat{k}, \;  \vec{b} = 1 \hat{i} - 2 \hat{j} + 2 \hat{k}$
+   
+   $\vec{m} = \frac{\vec{a} \; + \; \vec{b}}{2} = \frac{(3 \hat{i} \; + \; 4 \hat{j} \; + \; 12 \hat{k}) \; + \; (1 \hat{i} - 2 \hat{j} \; + \; 2 \hat{k})}{2}  = 2 \hat{i} \; + \; \hat{j} \; + \; 7 \hat{k}$
+ 
+:::
+
+##
+
+::: panel-tabset
+### 2. [**Magnitude & Operations**:]{.colored-bold style="color:yellow;"}
+
+-   [**Magnitude**:]{.colored-bold style="color:green;"}
+
+    For a vector $\vec{a} = (x, y, z)$
+
+    $|\vec{a}| = \sqrt{x^2 + y^2 + z^2}$
+
+-   [**Operations**:]{.colored-bold style="color:green;"}
+
+    -   [**Addition**:]{.colored-bold style="color:blue;"}
+
+        $\vec{a} = a_1\hat{i} + a_2\hat{j} + a_3\hat{k}$ and $\vec{b} = b_1\hat{i} + b_2\hat{j} + b_3\hat{k}$ , the sum is:
+
+        $\vec{a} + \vec{b} = (a_1 + b_1)\hat{i} + (a_2 + b_2)\hat{j} + (a_3 + b_3)\hat{k}$
+
+    -   [**Scalar Multiplication**:]{.colored-bold style="color:blue;"}
+
+        $\vec{a} = a_1\hat{i} + a_2\hat{j} + a_3\hat{k}$
+
+        $k \vec{a} = (k a_1)\hat{i} + (k a_2)\hat{j}+ (ka_3)\hat{k}$ , k is a scalar.
+
+### Example
+
+1.  Example
+
+    $\vec{a} = 3\hat{i} + 4\hat{j}$
+
+    $|\vec{a}| = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5 \text{ units}$
+
+2.  Example
+
+    $\vec{a} = 3\hat{i} + 4\hat{j}$ & $\vec{b} = 2\hat{i} - 1\hat{j}$
+
+    $\vec{a} + \vec{b} = (3 + 2)\hat{i} + (4 + (-1))\hat{j} = 5\hat{i} + 3\hat{j}$
+
+3.  Example
+
+    $\vec{a} = 3\hat{i} + 4\hat{j}$ , Scalar k = 2
+
+    $2\vec{a} = 2 \cdot (3\hat{i} + 4\hat{j}) = (2 \cdot 3)\hat{i} + (2 \cdot 4)\hat{j} = 6\hat{i} + 8\hat{j}$
+:::
+
+## 
+
+::: panel-tabset
+### [**Operations**:]{.colored-bold style="color:green;"}
+
+1.  [**Dot Product**:]{.colored-bold style="color:blue;"}
+
+    $\vec{a} = a_1\hat{i} + a_2\hat{j} + a_3\hat{k}$ and $\vec{b} = b_1\hat{i} + b_2\hat{j} + b_3\hat{k}$
+
+    -   in 2D or 3D space:
+
+        $\vec{a} \cdot \vec{b} = a_1 b_1 + a_2 b_2 + a_3 b_3$
+
+    -   in terms of magnitude and angle:
+
+        $\vec{a} \cdot \vec{b} = |\vec{a}| |\vec{b}| \cos \theta$
+
+### Example
+
+1.  Example
+
+    $\vec{a} = 3\hat{i} + 4\hat{j}$ and $\vec{b} = 2\hat{i} - 1\hat{j}$
+
+    -   Dot Product Formula (for 2D):
+
+        $\vec{a} \cdot \vec{b} = (3 \cdot 2) + (4 \cdot (-1)) = 6 - 4 = 2$
+
+        The dot product is $\vec{a} \cdot \vec{b} = 2$
+
+    -   the Angle Between the Vectors
+
+        $|\vec{a}| = \sqrt{3^2 + 4^2} = 5$ and $|\vec{b}| = \sqrt{2^2 + (-1)^2} = \sqrt{5}$
+
+        $2 = 5 \cdot \sqrt{5} \cdot \cos \theta$
+
+        $\cos \theta = \frac{2}{5 \sqrt{5}} = \frac{2}{5 \cdot 2.236} \approx \frac{2}{11.18}$
+
+        $\theta = \cos^{-1}(0.1789) \approx 79.7^\circ$
+:::
+
+## 
+
+::: panel-tabset
+### [**Properties of the Dot Product**:]{.colored-bold style="color:blue;"}
+
+$\quad$ 1. $\;$$\vec{a} \cdot \vec{b} = |\vec{a}| |\vec{b}| \cos \theta$
+
+$\quad$ 2. $\;$$\vec{a} \cdot \vec{a}  = |\vec{a}|^2$
+
+$\quad$ 3. $\;$$\vec{a} \cdot \vec{b} = \vec{b} \cdot \vec{a}$
+
+$\quad$ 4. $\;$$\vec{a} \cdot (\vec{b} + \vec{c}) = \vec{a} \cdot \vec{b} + \vec{a} \cdot \vec{c}$
+
+$\quad$ 5. $\;$$\vec{a} \cdot \vec{b} = 0 \implies \theta = 90^\circ$
+
+$\quad$ 6. $\;$projection of $\vec{a}$ on $\vec{b}$ = $\frac{\vec{a} \; \cdot \;\vec{b}}{|\vec{b}|}$
+
+### Example
+
+1.  Example
+
+    $\vec{a} = 2\hat{i} + 3\hat{j} + 4\hat{k}$ and $\vec{b} = 1\hat{i} - 2\hat{j} + 2\hat{k}$
+
+    $\vec{a} \cdot \vec{b} = (2 \cdot 1) + (3 \cdot (-2)) + (4 \cdot 2) = 4$
+
+    $|\vec{b}| = \sqrt{1^2 + (-2)^2 + 2^2} = \sqrt{9} = 3$
+
+    projection of $\vec{a}$ on $\vec{b}$ = $\frac{\vec{a} \; \cdot \; \vec{b}}{|\vec{b}|} = \frac{4}{3}$
+:::
+
+##
+
+::: panel-tabset
+### [**Operations**:]{.colored-bold style="color:green;"}
+
+-  [**Cross Product**:]{.colored-bold style="color:blue;"}
+
+For vectors    $\vec{a} = a_1 \hat{i} + a_2 \hat{j} + a_3 \hat{k}$    and $\vec{b} = b_1 \hat{i} + b_2 \hat{j} + b_3 \hat{k}$ , the cross product is computed using the determinant:
+
+ $\quad \vec{a} \times \vec{b} = \begin{vmatrix}
+\hat{i} & \hat{j} & \hat{k} \\
+a_1 & a_2 & a_3 \\
+b_1 & b_2 & b_3
+\end{vmatrix}$
+
+
+
+    
+
+
+
+### Example 
+
+1. Example 
+
+    $\vec{a} = 3 \hat{i} + 4 \hat{j} + 12 \hat{k} , \; \vec{b} = 1 \hat{i} - 2 \hat{j} + 2 \hat{k}$
+    
+    $\vec{a} \times \vec{b} = \begin{vmatrix}
+\hat{i} & \hat{j} &; \hat{k} \\
+3 & 4 & 12 \\
+1 & -2 & 2
+\end{vmatrix} =  32 \hat{i} + 6 \hat{j} - 10 \hat{k}$
+
+:::
+
+##
+
+::: panel-tabset
+### [**Properties of the Cross Product**:]{.colored-bold style="color:blue;"}
+
+  $\quad$ 1. $|\vec{a} \times \vec{b}| = |\vec{a}| \; |\vec{b}| \sin \theta$
+  
+  $\quad$ 2. $\vec{a} \times \vec{b} = -\vec{b} \times \vec{a}$
+   
+  $\quad$ 3. $\vec{a} \times \vec{b}$ is perpendicular to both $\vec{a}$ and $\vec{b}$, so:
+  
+  $\quad$ $\quad$ $(\vec{a} \times \vec{b}) \cdot \vec{a} = 0, \quad (\vec{a} \times \vec{b}) \cdot \vec{b} = 0$
+  
+  $\quad$ 4. If $\vec{a}$ and $\vec{b}$ are parallel (or one is zero),  $\vec{a} \times \vec{b} = \vec{0}.$
+  
+  $\quad$ 5. $\vec{a} \times (\vec{b} + \vec{c}) = \vec{a} \times \vec{b} + \vec{a} \times \vec{c}$
+  
+
+### Example
+
+
+:::
+
